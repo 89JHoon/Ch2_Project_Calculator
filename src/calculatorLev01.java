@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class circulatorLev01 {
+public class calculatorLev01 {
     public static void main(String[] args) {
-        System.out.println(" 계산기를 만들어 보자 ");
+        System.out.println(" 사칙연산 계산기 입니다! ");
         String add = "+";
         String divide = "/";
         String multiply = "*";
@@ -55,7 +55,6 @@ public class circulatorLev01 {
             }
         }
         System.out.println("계산기 종료");
-
 
     }
 }
