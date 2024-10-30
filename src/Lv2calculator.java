@@ -3,26 +3,23 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Lv2calculator {
-    private int num1 = 0;
-    private int num2 = 0;
-    private String opertator;
 
     // 연산 결과를 저장하는 컬렉션 타입
     private List<Double> result = new ArrayList();
 
 
     //사칙연산을 수행 후, 결과값 반환 메서드
-    public double calculate(int num1, int num2, String opertator) {
-        if (opertator.equals("+")) {
+    public double calculate(int num1, int num2, String operator) {
+        if (operator.equals("+")) {
             result.add((double) (num1+num2));
             return num1 + num2;
-        } else if (opertator.equals("-")) {
+        } else if (operator.equals("-")) {
             result.add((double) (num1-num2));
             return num1 - num2;
-        } else if (opertator.equals("*")) {
+        } else if (operator.equals("*")) {
             result.add((double) (num1*num2));
             return num1 * num2;
-        } else if (opertator.equals("/")) {
+        } else if (operator.equals("/")) {
             if (num2 == 0) {
                 System.out.println("0 으로는 나눌수 없습니다.");
             } else {
@@ -48,9 +45,8 @@ public class Lv2calculator {
     }
 
     //가장 먼저 저장된 데이터를 삭제하는 기능을 가진 메서드
-    public void deletList(){
+    public void deleteList(){
         result.remove(0);
     }
-
 
 }

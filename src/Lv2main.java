@@ -30,7 +30,7 @@ public class Lv2main {
         }
 
         //
-        play.deletList();
+        play.deleteList();
 
 
         List<Double> resultList = play.getResult();
